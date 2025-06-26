@@ -1,8 +1,3 @@
-Here’s a complete `README.md` file for your project, including file structure and key features:
-
----
-
-```markdown
 # 🖥️ Real-Time System Resource Monitor
 
 A lightweight real-time system monitoring web app built using **Flask**, **psutil**, and **Matplotlib**. It tracks system performance metrics including CPU, memory, disk, and network usage, with dynamic visualizations and a JSON data log.
