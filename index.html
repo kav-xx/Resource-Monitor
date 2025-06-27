@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real-Time System Metrics</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <header>
+    <h1>System Performance Monitor</h1>
+  </header>
+  <main>
+    <div class="controls">
+      <button id="startButton">Start Monitoring</button>
+      <button id="stopButton">Stop Monitoring</button>
+    </div>
+    <section id="metrics">
+      <div class="metric">
+        <h2>CPU Usage</h2>
+        <canvas id="CPU Chart"></canvas>
+      </div>
+      <div class="metric">
+        <h2>Memory Usage</h2>
+        <canvas id="Memory Chart"></canvas>
+      </div>
+      <div class="metric">
+        <h2>Disk Usage</h2>
+        <canvas id="Disk Chart"></canvas>
+      </div>
+      <div class="metric">
+        <h2>Network Traffic</h2>
+        <canvas id="Network Chart"></canvas>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>Powered by JavaScript and Chart.js</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,110 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styling */
+  body {
+    font-family: 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    background: linear-gradient(90deg, #4CAF50, #357a38);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Main Content Area */
+  main {
+    padding: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+  
+  /* Metric Cards */
+  .metric {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    margin: 1rem;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1), -4px -4px 10px rgba(255, 255, 255, 0.7);
+    width: 45%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Metric Card Hover Effect */
+  .metric:hover {
+    transform: translateY(-5px);
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.2), -6px -6px 15px rgba(255, 255, 255, 0.8);
+  }
+  
+  /* Chart Canvas */
+  .metric canvas {
+    max-width: 100%;
+    height: 280px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    background: #fff;
+  }
+  
+  /* Footer Styling */
+  footer {
+    background: linear-gradient(90deg, #4CAF50, #357a38);
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0px -2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    main {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .metric {
+      width: 100%;
+    }
+  
+    header {
+      font-size: 1.5rem;
+    }
+  
+    footer {
+      font-size: 0.8rem;
+    }
+  }
+  
+  /* Accessibility Enhancements */
+  .metric h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #444;
+  }
+  
+  .metric canvas {
+    outline: none;
+  }
+  
